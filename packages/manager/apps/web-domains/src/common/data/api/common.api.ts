@@ -1,6 +1,10 @@
 import { v6 } from '@ovh-ux/manager-core-api';
 import { ServiceInfoUpdateEnum } from '@/common/enum/common.enum';
-import { TDomainContact, TServiceInfo, TServiceOption } from '@/common/types/common.types';
+import {
+  TDomainContact,
+  TServiceInfo,
+  TServiceOption,
+} from '@/common/types/common.types';
 
 export const getServiceInformation = async (
   serviceName: string,

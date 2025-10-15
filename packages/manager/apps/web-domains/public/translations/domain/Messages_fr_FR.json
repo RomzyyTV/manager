@@ -17,10 +17,10 @@
   "domain_dns_table_header_ip": "IP associée",
   "domain_dns_table_header_status": "Statut",
   "domain_dns_table_header_type": "Type de serveurs DNS",
-  "domain_dns_table_state_deleting": "En cours de suppression",
-  "domain_dns_table_state_activating": "En cours d'activation",
-  "domain_dns_table_state_enabled": "Actif",
-  "domain_dns_table_state_error": "En erreur",
+  "domain_table_state_deleting": "En cours de suppression",
+  "domain_table_state_activating": "En cours d'activation",
+  "domain_table_state_enabled": "Actif",
+  "domain_table_state_error": "En erreur",
   "domain_dns_table_type_external": "Personnalisé",
   "domain_dns_table_type_anycast": "Anycast",
   "domain_dns_table_type_standard": "Standard",
@@ -123,5 +123,11 @@
   "domain_tab_DNS_modification_form_internal_server_error": "Pour utiliser les DNS internes d'OVHcloud, veuillez sélectionner un autre type de configuration.",
   "domain_tab_DNS_modification_modal_body": "Après validation, les DNS utilisés seront les suivants :",
   "domain_tab_DNS_modification_update_error": "La mise à jour de vos DNS a échoué pour la raison suivante : ",
-  "domain_tab_DNS_modification_update_success": "Votre demande de mise à jour a bien été prise en considération et sera traitée dans les meilleurs délais."
+  "domain_tab_DNS_modification_update_success": "Votre demande de mise à jour a bien été prise en considération et sera traitée dans les meilleurs délais.",
+  "domain_tab_hosts_listing_message_one": "Personnalisez ici vos serveurs DNS avec votre nom de domaine afin qu'ils s'affichent dans les bases WHOIS.",
+  "domain_tab_hosts_listing_message_two": "Vous pouvez créer vos propres serveurs DNS en IPv4.",
+  "domain_tab_hosts_listing_table_host": "Hôte",
+  "domain_tab_hosts_listing_table_target": "Cible(s)",
+  "domain_tab_hosts_drawer_add_title": "Ajout d'un nouvel host",
+  "domain_tab_hosts_drawer_modify_title": "Modifier l'host"
 }
