@@ -2,7 +2,7 @@ import { NAMESPACES } from '@ovh-ux/manager-common-translations';
 import { Datagrid } from '@ovh-ux/manager-react-components';
 import { Button, BUTTON_SIZE, Text, TEXT_PRESET } from '@ovhcloud/ods-react';
 import { useTranslation } from 'react-i18next';
-import { useParams } from 'react-router-dom';
+import { Outlet, useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { useHostsDatagridColumns } from '@/domain/hooks/domainTabs/useHostsDatagridColumns';
 import { useGetDomainResource } from '@/domain/hooks/data/query';
@@ -77,6 +77,7 @@ export default function HostsListing() {
           </Button>
         }
       />
+      <Outlet />
     </section>
   );
 }

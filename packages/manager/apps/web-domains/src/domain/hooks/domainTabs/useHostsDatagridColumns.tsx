@@ -2,6 +2,7 @@ import { NAMESPACES } from '@ovh-ux/manager-common-translations';
 import { ActionMenu, DataGridTextCell } from '@ovh-ux/manager-react-components';
 import { ODS_BUTTON_COLOR, ODS_BUTTON_VARIANT } from '@ovhcloud/ods-components';
 import { useTranslation } from 'react-i18next';
+import { useNavigate } from 'react-router-dom';
 import { THost } from '@/domain/types/host';
 import DatagridColumnStatus from '@/domain/components/DatagridColumns/DatagridColumnStatus';
 import { StatusEnum } from '@/domain/enum/Status.enum';
@@ -12,6 +13,7 @@ export const useHostsDatagridColumns = () => {
     NAMESPACES.ACTIONS,
     NAMESPACES.STATUS,
   ]);
+  const navigate = useNavigate();
 
   const columns = [
     {
@@ -50,6 +52,7 @@ export const useHostsDatagridColumns = () => {
               label: t(`${NAMESPACES.ACTIONS}:delete`),
               color: ODS_BUTTON_COLOR.critical,
               isDisabled: props.status === StatusEnum.DELETING.toLowerCase(),
+              onClick: () => navigate(`${props.host}/delete`),
             },
           ]}
           id={props.host}
