@@ -123,5 +123,9 @@
   "domain_tab_DNS_modification_form_internal_server_error": "Pour utiliser les DNS internes d'OVHcloud, veuillez sélectionner un autre type de configuration.",
   "domain_tab_DNS_modification_modal_body": "Après validation, les DNS utilisés seront les suivants :",
   "domain_tab_DNS_modification_update_error": "La mise à jour de vos DNS a échoué pour la raison suivante : ",
-  "domain_tab_DNS_modification_update_success": "Votre demande de mise à jour a bien été prise en considération et sera traitée dans les meilleurs délais."
+  "domain_tab_DNS_modification_update_success": "Votre demande de mise à jour a bien été prise en considération et sera traitée dans les meilleurs délais.",
+  "domain_DNSSEC_table_header_keyTag": "Key tag",
+  "domain_DNSSEC_table_header_flag": "Flag",
+  "domain_DNSSEC_table_header_algo": "Algorithme",
+  "domain_DNSSEC_table_header_publicKey": "Clé publique (encodée base64)"
 }
