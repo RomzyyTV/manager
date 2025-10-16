@@ -66,6 +66,7 @@ export default function HostForm({
             <Input
               name="input"
               className="w-full"
+              readOnly={drawerAction === DrawerActionEnum.Modify}
               onChange={(e) => {
                 const { value } = e.target;
                 if (isHostnameInvalid(value, serviceName)) {
@@ -82,6 +83,11 @@ export default function HostForm({
                   host: hostname,
                 }));
               }}
+              defaultValue={
+                drawerAction === DrawerActionEnum.Modify
+                  ? formData.host.split('.')[0]
+                  : ''
+              }
             />
 
             <FormFieldError className="text-sm">
@@ -131,6 +137,7 @@ export default function HostForm({
                 ips: hostIp,
               }));
             }}
+            defaultValue={formData.ips}
           />
 
           <FormFieldError className="text-sm">

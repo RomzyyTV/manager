@@ -86,7 +86,7 @@ export default function HostDrawer({
       </Text>
 
       <HostForm
-        drawerAction={DrawerActionEnum.Add}
+        drawerAction={drawerAction}
         formData={formData}
         setFormData={setFormData}
         ipsSupported={ipsSupported}
