@@ -27,28 +27,36 @@ const Instance: FC = () => {
   const dashboardPath = useResolvedPath('');
   const vncPath = useResolvedPath(`../${instanceId}/vnc`); // vnc will be redirect to the legacy page until migration done
 
+  const observabilityServiceName = 'ldpTest';
+  const observabilityProductType = 'instances';
+
   const { instance, isPending: isInstanceLoading, error } = useDashboard({
     region,
     instanceId,
   });
 
   const tabs = useMemo(() => {
-    const defaultTab = [
+    let instancesTab = [
       {
         label: t('general_information'),
         to: dashboardPath.pathname,
-      },
+      }
     ];
 
-    return instance?.isEditEnabled
-      ? [
-          ...defaultTab,
-          {
-            label: t('dashboard:pci_instances_dashboard_tab_vnc_title'),
-            to: vncPath.pathname,
-          },
-        ]
-      : defaultTab;
+    if (instance?.isEditEnabled) {
+      instancesTab.push({
+        label: t('dashboard:pci_instances_dashboard_tab_vnc_title'),
+        to: vncPath.pathname,
+      });
+    }
+
+    instancesTab.push({
+      label: t('dashboard:pci_instances_dashboard_tab_observability_title'),
+      to: `${dashboardPath.pathname}/observability/${observabilityServiceName}/${observabilityProductType}`,
+    });
+
+    return instancesTab;
+
   }, [dashboardPath.pathname, vncPath.pathname, t, instance?.isEditEnabled]);
 
   return (

@@ -9,6 +9,7 @@ import {
 import { instanceLegacyRedirectionLoader } from './loaders/instanceLegacy.loader';
 import { ComponentType } from 'react';
 import { TSectionType } from '@/types/instance/action/action.type';
+import { observabilityRoutes } from '@ovh-ux/observability-to-customer';
 
 // eslint-disable-next-line @typescript-eslint/no-empty-object-type
 const lazyRouteConfig = <ComponentProps extends {} = {}>(
@@ -201,6 +202,13 @@ export const getRoutes = (shell: ShellContextType): RouteObject[] => [
             ),
             children: instanceActionsRoutes,
           },
+          {
+            path: 'observability',
+            ...lazyRouteConfig(() =>
+              import('@/pages/instances/instance/observability/Observability.page'),
+            ),
+            children: observabilityRoutes
+          }
         ],
       },
       {
