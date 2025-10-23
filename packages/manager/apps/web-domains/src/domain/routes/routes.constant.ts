@@ -11,5 +11,6 @@ export const urls = {
   domainTabDynHost: '/domain/:serviceName/dynhost',
   domainTabHost: '/domain/:serviceName/host',
   domainTabDnssec: '/domain/:serviceName/dnssec',
+  domainTabDnssecDelete: '/domain/:serviceName/dnssec/:keyTag/:delete',
   domainTabContactManagement: '/domain/:serviceName/contact-management',
 };

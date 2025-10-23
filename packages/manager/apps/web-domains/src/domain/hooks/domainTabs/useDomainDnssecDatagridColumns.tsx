@@ -2,9 +2,11 @@ import { NAMESPACES } from '@ovh-ux/manager-common-translations';
 import { ActionMenu, DataGridTextCell } from '@ovh-ux/manager-react-components';
 import { ODS_BUTTON_COLOR, ODS_BUTTON_VARIANT } from '@ovhcloud/ods-components';
 import { useTranslation } from 'react-i18next';
+import { useNavigate } from 'react-router-dom';
 
 export const useDomainDnssecDatagridColumns = () => {
   const { t } = useTranslation('domain');
+  const navigate = useNavigate();
   const columns = [
     {
       id: 'keyTag',
@@ -46,6 +48,7 @@ export const useDomainDnssecDatagridColumns = () => {
               id: 2,
               label: t(`${NAMESPACES.ACTIONS}:delete`),
               color: ODS_BUTTON_COLOR.critical,
+              onClick: () => navigate(`32456/delete`),
             },
           ]}
           id={'1'}

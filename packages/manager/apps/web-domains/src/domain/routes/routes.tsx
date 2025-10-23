@@ -33,6 +33,10 @@ const DsRecordsPage = React.lazy(() =>
   import('@/domain/pages/domainTabs/dnssec/dnssecListing'),
 );
 
+const DsRecordsDelete = React.lazy(() =>
+  import('@/domain/pages/domainTabs/dnssec/dnssecDelete'),
+);
+
 function RedirectToDefaultTab() {
   const { serviceName } = useParams<{ serviceName: string }>();
   return (
@@ -91,7 +95,12 @@ export default (
         <Route path={urls.domainTabRedirection} Component={Outlet} />
         <Route path={urls.domainTabDynHost} Component={Outlet} />
         <Route path={urls.domainTabHost} Component={Outlet} />
-        <Route path={urls.domainTabDnssec} Component={DsRecordsPage} />
+        <Route path={urls.domainTabDnssec} Component={DsRecordsPage}>
+          <Route
+            path={urls.domainTabDnssecDelete}
+            Component={DsRecordsDelete}
+          />
+        </Route>
         <Route path={urls.domainTabContactManagement} Component={Outlet} />
       </Route>
       <Route path={urls.domainTabOrderAnycast} Component={AnycastOrderPage} />
