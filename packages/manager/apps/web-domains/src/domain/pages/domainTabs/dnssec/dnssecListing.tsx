@@ -8,16 +8,29 @@ import { useDomainDnssecDatagridColumns } from '@/domain/hooks/domainTabs/useDom
 import { useGetDomainResource } from '@/domain/hooks/data/query';
 import { TDsDataInterface } from '@/domain/types/dnssecConfiguration';
 import DnssecDrawer from '@/domain/components/Dnssec/DnssecDrawer';
+import { DrawerActionEnum } from '@/domain/enum/drawerAction.enum';
 
 export default function DnssecListing() {
   const { t } = useTranslation(['domain', NAMESPACES.ACTIONS, NAMESPACES.FORM]);
   const { serviceName } = useParams();
-  const columns = useDomainDnssecDatagridColumns();
 
   const [drawer, setDrawer] = useState<{
     isOpen: boolean;
+    action: DrawerActionEnum;
   }>({
     isOpen: false,
+    action: null,
+  });
+
+  const [formData, setFormData] = useState<TDsDataInterface>({
+    keyTag: '',
+    keyType: '',
+    algorithm: 0,
+    publicKey: '',
+    supportedAlgorithm: {
+      name: '',
+      number: 0,
+    },
   });
   const { domainResource, isFetchingDomainResource } = useGetDomainResource(
     serviceName,
@@ -27,10 +40,10 @@ export default function DnssecListing() {
   useEffect(() => {
     const enriched = domainResource.currentState.dnssecConfiguration.dsData.map(
       (item) => {
-        if (item.algorithm === '3') {
+        if (item.algorithm === 3) {
           return {
             ...item,
-            supportedAlgorithm: { name: 'RSASHZA3457', number: '3' },
+            supportedAlgorithm: { name: 'RSASHZA3457', number: 3 },
           };
         }
 
@@ -51,6 +64,8 @@ export default function DnssecListing() {
     setItems(enriched);
   }, [domainResource]);
 
+  const columns = useDomainDnssecDatagridColumns({ setDrawer, setFormData });
+
   return (
     <section>
       <Datagrid
@@ -65,6 +80,7 @@ export default function DnssecListing() {
             onClick={() =>
               setDrawer({
                 isOpen: true,
+                action: DrawerActionEnum.ADD,
               })
             }
           >
@@ -72,7 +88,12 @@ export default function DnssecListing() {
           </Button>
         }
       />
-      <DnssecDrawer drawer={drawer} setDrawer={setDrawer} />
+      <DnssecDrawer
+        drawer={drawer}
+        formData={formData}
+        setFormData={setFormData}
+        setDrawer={setDrawer}
+      />
     </section>
   );
 }

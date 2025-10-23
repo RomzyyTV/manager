@@ -1,10 +1,34 @@
 import { NAMESPACES } from '@ovh-ux/manager-common-translations';
 import { ActionMenu, DataGridTextCell } from '@ovh-ux/manager-react-components';
 import { ODS_BUTTON_COLOR, ODS_BUTTON_VARIANT } from '@ovhcloud/ods-components';
+import { Dispatch, SetStateAction } from 'react';
 import { useTranslation } from 'react-i18next';
 import { TDsDataInterface } from '@/domain/types/dnssecConfiguration';
+import { DrawerActionEnum } from '@/domain/enum/drawerAction.enum';
 
-export const useDomainDnssecDatagridColumns = () => {
+interface UseDomainDnssecDatagridColumnsProps {
+  readonly setDrawer: Dispatch<
+    SetStateAction<{ isOpen: boolean; action?: DrawerActionEnum }>
+  >;
+
+  readonly setFormData: Dispatch<
+    SetStateAction<{
+      keyTag: string;
+      keyType: string;
+      algorithm: number;
+      publicKey: string;
+      supportedAlgorithm: {
+        name: string;
+        number: number;
+      };
+    }>
+  >;
+}
+
+export const useDomainDnssecDatagridColumns = ({
+  setDrawer,
+  setFormData,
+}: UseDomainDnssecDatagridColumnsProps) => {
   const { t } = useTranslation('domain');
   const columns = [
     {
@@ -39,12 +63,25 @@ export const useDomainDnssecDatagridColumns = () => {
     },
     {
       id: 'actions',
-      cell: () => (
+      cell: (props: TDsDataInterface) => (
         <ActionMenu
           items={[
             {
               id: 1,
               label: t(`${NAMESPACES.ACTIONS}:modify`),
+              onClick: () => {
+                setDrawer({ isOpen: true, action: DrawerActionEnum.MODIFY });
+                setFormData({
+                  keyTag: props.keyTag,
+                  keyType: `${props.keyType} - Key Signing Key (KSK)`,
+                  algorithm: props.algorithm,
+                  publicKey: props.publicKey,
+                  supportedAlgorithm: {
+                    name: props.supportedAlgorithm.name,
+                    number: props.supportedAlgorithm.number,
+                  },
+                });
+              },
             },
 
             {
