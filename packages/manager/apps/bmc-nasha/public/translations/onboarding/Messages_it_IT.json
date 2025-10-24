@@ -1,25 +1,26 @@
 {
-  "title_fallback": "Benvenuto su app-gen-test",
-  "description_part1": "Scopri come ottenere il massimo da app-gen-test, ddd.",
+  "title_fallback": "NAS-HA",
+  "description_part1": "Scopri come ottenere il massimo dallo storage NAS-HA.",
   "description_part2": "Segui le nostre guide per iniziare rapidamente.",
+  "order_button": "Ordina un NAS-HA",
   "guides": {
     "guide1": {
-      "category": "Discovery",
-      "title": "Iniziare a utilizzare app-gen-test",
+      "category": "Scoperta",
+      "title": "Iniziare a utilizzare NAS-HA",
       "description": "Concetti base per iniziare.",
       "cta": "Scopri"
     },
     "guide2": {
       "category": "Tutorial",
-      "title": "Configurare il tuo ambiente",
-      "description": "Segui la nostra guida passo per passo.",
+      "title": "Configurare l'accesso NFS",
+      "description": "Segui la nostra guida passo per passo per NFS.",
       "cta": "Guarda il tutorial"
     },
     "guide3": {
-      "category": "FAQ",
-      "title": "Domande frequenti",
-      "description": "Trova le risposte alle domande più frequenti.",
-      "cta": "Leggi le FAQ"
+      "category": "Tutorial",
+      "title": "Configurare l'accesso CIFS",
+      "description": "Segui la nostra guida passo per passo per CIFS.",
+      "cta": "Guarda il tutorial"
     }
   }
 }

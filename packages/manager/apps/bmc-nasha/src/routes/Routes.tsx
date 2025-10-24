@@ -8,7 +8,8 @@ import ErrorBoundary from '@/components/debug/ErrorBoundary.component';
 import { redirectionApp, urls } from './Routes.constants';
 
 const MainLayoutPage = React.lazy(() => import('@/pages/Main.layout'));
-
+const RootPage = React.lazy(() => import('@/pages/root/Root.page'));
+const OnboardingPage = React.lazy(() => import('@/pages/onboarding/Onboarding.page'));
 const ListingPage = React.lazy(() => import('@/pages/listing/Listing.page'));
 
 export default (
@@ -29,19 +30,22 @@ export default (
         />
       }
     >
-      {/* Default landing inside root → listing page */}
+      {/* Root with redirect logic */}
+      <Route index Component={RootPage} />
+
+      {/* Onboarding page */}
       <Route
-        index
-        Component={ListingPage}
+        path="onboarding"
+        Component={OnboardingPage}
         handle={{
           tracking: {
-            pageName: 'listing',
-            pageType: PageType.listing,
+            pageName: 'onboarding',
+            pageType: PageType.onboarding,
           },
         }}
       />
 
-      {/* Listing route (alternative path) */}
+      {/* Listing page */}
       <Route
         path={urls.listing}
         Component={ListingPage}

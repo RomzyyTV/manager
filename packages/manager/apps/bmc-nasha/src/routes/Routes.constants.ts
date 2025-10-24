@@ -4,6 +4,7 @@ import { getRoot } from './Routes.utils';
 
 export const urls = {
   root: getRoot(),
+  onboarding: 'onboarding',
   listing: 'listing',
 } as const;
 
