@@ -1,0 +1,10 @@
+{
+  "nasha_onboarding_content": "Odkryj zarządzane usługi magazynowe oparte na systemie plików OpenZFS. Używaj scentralizowanych przestrzeni magazynowych za pomocą kilku kliknięć, aby przechowywać lub tworzyć kopie zapasowe swoich danych i plików.",
+  "nasha_onboarding_getting-started_title": "Rozpocznij pracę z rozwiązaniem HA-NAS",
+  "nasha_onboarding_getting-started_content": "Dowiedz się, jak zarządzać HA-NAS za pośrednictwem Panelu sterowania OVHcloud",
+  "nasha_onboarding_nfs_title": "Zamontuj swój NAS za pośrednictwem udostępnienia NFS",
+  "nasha_onboarding_nfs_content": "Dowiedz się, jak zamontować NAS za pośrednictwem udostępnienia NFS",
+  "nasha_onboarding_cifs_title": "Montowanie rozwiązania NAS na Windows Server za pośrednictwem CIFS",
+  "nasha_onboarding_cifs_content": "Dowiedz się, jak zamontować NAS na Windows Server za pośrednictwem protokołu CIFS",
+  "nasha_onboarding_order": "Zamów HA-NAS"
+}

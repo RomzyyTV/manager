@@ -1,0 +1,10 @@
+{
+  "nasha_onboarding_content": "Explore servicios de almacenamiento gestionados basados en el sistema de archivos OpenZFS. Utilice espacios de almacenamiento centralizados con solo unos clics para almacenar o respaldar sus datos y archivos.",
+  "nasha_onboarding_getting-started_title": "Primeros pasos con una solución HA-NAS",
+  "nasha_onboarding_getting-started_content": "Descubra cómo gestionar un HA-NAS a través del Panel de control de OVHcloud",
+  "nasha_onboarding_nfs_title": "Montar su NAS a través de un recurso compartido NFS",
+  "nasha_onboarding_nfs_content": "Descubra cómo montar un NAS a través de un recurso compartido NFS",
+  "nasha_onboarding_cifs_title": "Montar una solución NAS en Windows Server a través de CIFS",
+  "nasha_onboarding_cifs_content": "Descubra cómo montar un NAS en Windows Server a través del protocolo CIFS",
+  "nasha_onboarding_order": "Pedir un HA-NAS"
+}
