@@ -1,0 +1,39 @@
+{
+  "listing": {
+    "title": "Lista de inquilinos",
+    "endpoint_cell": "Punto final",
+    "retention_cell": "Retención",
+    "active_metrics_cell": "Métricas activas",
+    "tags_cell": "Etiquetas",
+    "clipboard_error_label": "Error",
+    "create_tenant_button": "Agregar un nuevo inquilino",
+    "details_action": "Detalles",
+    "access_grafana_action": "Acceder a Grafana",
+    "copy_uid_action": "Copiar el UID del inquilino",
+    "generate_access_token_action": "Generar un token de acceso"
+  },
+  "delete": {
+    "delete_tenant_title": "Eliminar el inquilino",
+    "delete_tenant_description": "¿Está seguro de que desea eliminar el inquilino {{tenantName}}?"
+  },
+  "onboarding": {
+    "description": "Cree su nuevo inquilino para seguir explorando todo el potencial de las métricas de observabilidad. Podrá enviar datos, crear paneles y configurar alertas adaptadas a sus necesidades específicas.",
+    "orderButtonLabel": "Cree su inquilino"
+  },
+  "creation": {
+    "title": "Crear un inquilino",
+    "tenantInformation": "Introducir la información del inquilino",
+    "namePlaceholder": "Nombre del inquilino",
+    "description": "Descripción (opcional)",
+    "descriptionPlaceholder": "Agregue una descripción de las métricas que va a escribir en este inquilino"
+  },
+  "configuration": {
+    "title": "Configure su inquilino",
+    "retention": "Retención",
+    "retentionPlaceholder": "Seleccione la retención de datos",
+    "limit": {
+      "title": "Límite de ingestión (métricas activas)",
+      "description": "Establezca el límite máximo del número de métricas activas para este inquilino."
+    }
+  }
+}

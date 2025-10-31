@@ -1,0 +1,10 @@
+{
+  "listing": {
+    "service": "Service",
+    "select_observability_service": "Select a service"
+  },
+  "onboarding": {
+    "description": "Create your service to discover how observability metrics will help you gain a finer and more granular view of the performance of your infrastructure and applications.",
+    "orderButtonLabel": "Activate your service"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "listing": {
+    "title": "List of tenants",
+    "endpoint_cell": "Endpoint",
+    "retention_cell": "Retention",
+    "active_metrics_cell": "Active metrics",
+    "tags_cell": "Tags",
+    "clipboard_error_label": "Error",
+    "create_tenant_button": "Add a new tenant",
+    "details_action": "Details",
+    "access_grafana_action": "Access Grafana",
+    "copy_uid_action": "Copy the tenant UID",
+    "generate_access_token_action": "Generate an access token"
+  },
+  "delete": {
+    "delete_tenant_title": "Delete the tenant",
+    "delete_tenant_description": "Are you sure you want to delete the tenant {{tenantName}}"
+  },
+  "onboarding": {
+    "description": "Create your new tenant to continue exploring the full potential of observability metrics. You will be able to send data, create dashboards, and set up alerts tailored to your specific needs.",
+    "orderButtonLabel": "Create your tenant"
+  },
+  "creation": {
+    "title": "Create a tenant",
+    "tenantInformation": "Enter tenant information",
+    "namePlaceholder": "Tenant name",
+    "description": "Description (optional)",
+    "descriptionPlaceholder": "Add a description of the metrics you will write in this tenant"
+  },
+  "configuration": {
+    "title": "Configure your tenant",
+    "retention": "Retention",
+    "retentionPlaceholder": "Select data retention",
+    "limit": {
+      "title": "Ingestion limit (active metrics)",
+      "description": "Set the maximum limit of active metrics for this tenant."
+    }
+  }
+}

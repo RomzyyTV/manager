@@ -1,0 +1,39 @@
+{
+  "listing": {
+    "title": "Liste der Mieter",
+    "endpoint_cell": "Endpunkt",
+    "retention_cell": "Aufbewahrung",
+    "active_metrics_cell": "Aktive Metriken",
+    "tags_cell": "Tags",
+    "clipboard_error_label": "Fehler",
+    "create_tenant_button": "Neuen Mieter hinzufügen",
+    "details_action": "Details",
+    "access_grafana_action": "Zugriff auf Grafana",
+    "copy_uid_action": "UID des Mieters kopieren",
+    "generate_access_token_action": "Zugriffstoken generieren"
+  },
+  "delete": {
+    "delete_tenant_title": "Mieter löschen",
+    "delete_tenant_description": "Sind Sie sicher, dass Sie den Mieter {{tenantName}} löschen möchten?"
+  },
+  "onboarding": {
+    "description": "Erstellen Sie Ihren neuen Mieter, um das volle Potenzial der Observability-Metriken weiter zu erkunden. Sie können Daten senden, Dashboards erstellen und Warnungen einrichten, die auf Ihre spezifischen Bedürfnisse zugeschnitten sind.",
+    "orderButtonLabel": "Erstellen Sie Ihren Mieter"
+  },
+  "creation": {
+    "title": "Mieter erstellen",
+    "tenantInformation": "Mieterinformationen eingeben",
+    "namePlaceholder": "Mietername",
+    "description": "Beschreibung (optional)",
+    "descriptionPlaceholder": "Fügen Sie eine Beschreibung der Metriken hinzu, die Sie in diesem Mieter schreiben werden."
+  },
+  "configuration": {
+    "title": "Konfigurieren Sie Ihren Mandanten",
+    "retention": "Aufbewahrung",
+    "retentionPlaceholder": "Wählen Sie die Datenaufbewahrung aus",
+    "limit": {
+      "title": "Eingangsgrenze (aktive Metriken)",
+      "description": "Legen Sie die maximale Anzahl aktiver Metriken für diesen Mandanten fest."
+    }
+  }
+}

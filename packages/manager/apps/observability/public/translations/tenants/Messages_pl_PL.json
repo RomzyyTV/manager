@@ -1,0 +1,39 @@
+{
+  "listing": {
+    "title": "Lista najemców",
+    "endpoint_cell": "Punkt końcowy",
+    "retention_cell": "Retencja",
+    "active_metrics_cell": "Aktywne metryki",
+    "tags_cell": "Tagi",
+    "clipboard_error_label": "Błąd",
+    "create_tenant_button": "Dodaj nowego najemcę",
+    "details_action": "Szczegóły",
+    "access_grafana_action": "Uzyskaj dostęp do Grafany",
+    "copy_uid_action": "Skopiuj UID najemcy",
+    "generate_access_token_action": "Wygeneruj token dostępu"
+  },
+  "delete": {
+    "delete_tenant_title": "Usuń najemcę",
+    "delete_tenant_description": "Czy na pewno chcesz usunąć najemcę {{tenantName}}?"
+  },
+  "onboarding": {
+    "description": "Utwórz nowego najemcę, aby kontynuować odkrywanie pełnego potencjału metryk obserwowalności. Będziesz mógł wysyłać dane, tworzyć pulpity nawigacyjne i konfigurować alerty dostosowane do Twoich specyficznych potrzeb.",
+    "orderButtonLabel": "Utwórz swojego najemcę"
+  },
+  "creation": {
+    "title": "Stwórz najemcę",
+    "tenantInformation": "Wprowadź informacje o najemcy",
+    "namePlaceholder": "Nazwa najemcy",
+    "description": "Opis (opcjonalny)",
+    "descriptionPlaceholder": "Dodaj opis metryk, które zamierzasz zapisać w tym najemcy"
+  },
+  "configuration": {
+    "title": "Skonfiguruj swojego najemcę",
+    "retention": "Retencja",
+    "retentionPlaceholder": "Wybierz retencję danych",
+    "limit": {
+      "title": "Limit wchłaniania (aktywy metryki)",
+      "description": "Ustaw maksymalny limit liczby aktywnych metryk dla tego najemcy."
+    }
+  }
+}

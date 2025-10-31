@@ -228,5 +228,10 @@
   "sidebar_security_identity_operations_iam_tag-management": "Tag-Management",
   "sidebar_pci_quantum_qpu": "QPUs",
   "sidebar_security_identity_operations_secret_manager": "Secret Manager",
-  "sidebar_web_hosting_managed_wordpress": "Managed hosting for WordPress"
+  "sidebar_web_hosting_managed_wordpress": "Managed hosting for WordPress",
+  "sidebar_observability": "Überwachung",
+  "sidebar_observability_short": "Überwachung",
+  "sidebar_observability_dashboards": "Dashboards",
+  "sidebar_observability_metrics": "Metriken",
+  "sidebar_observability_metrics_tenants": "Mieter"
 }

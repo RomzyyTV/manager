@@ -1,0 +1,17 @@
+{
+  "infrastructure": {
+    "region": {
+      "all": "Tutte le regioni",
+      "eu": "Europa",
+      "us": "Stati Uniti",
+      "ap": "Asia Pacifica",
+      "ca": "Nord America",
+      "title": "Seleziona la regione",
+      "zone": {
+        "local": "Distribuzione delle tue applicazioni il più vicino possibile ai tuoi utenti per una bassa latenza e la residenza dei dati.",
+        "1_az": "Distribuzione resiliente ed economica in 1 zona di disponibilità.",
+        "3_az": "Distribuzione ad alta resilienza/alta disponibilità per le tue applicazioni critiche su 3 zone di disponibilità"
+      }
+    }
+  }
+}

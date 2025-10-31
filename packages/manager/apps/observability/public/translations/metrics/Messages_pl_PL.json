@@ -1,0 +1,10 @@
+{
+  "listing": {
+    "service": "Usługa",
+    "select_observability_service": "Wybierz usługę"
+  },
+  "onboarding": {
+    "description": "Utwórz swoją usługę, aby odkryć, jak metryki obserwowalności pomogą Ci uzyskać bardziej szczegółowy i granularny wgląd w wydajność Twojej infrastruktury i aplikacji.",
+    "orderButtonLabel": "Aktywuj swoją usługę"
+  }
+}

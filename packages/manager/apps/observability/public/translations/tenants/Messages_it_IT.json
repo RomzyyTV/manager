@@ -1,0 +1,39 @@
+{
+  "listing": {
+    "title": "Elenco dei tenant",
+    "endpoint_cell": "Endpoint",
+    "retention_cell": "Ritenzione",
+    "active_metrics_cell": "Metriche attive",
+    "tags_cell": "Tag",
+    "clipboard_error_label": "Errore",
+    "create_tenant_button": "Aggiungi un nuovo tenant",
+    "details_action": "Dettagli",
+    "access_grafana_action": "Accedi a Grafana",
+    "copy_uid_action": "Copia l'UID del tenant",
+    "generate_access_token_action": "Genera un token di accesso"
+  },
+  "delete": {
+    "delete_tenant_title": "Elimina il tenant",
+    "delete_tenant_description": "Sei sicuro di voler eliminare il tenant {{tenantName}}"
+  },
+  "onboarding": {
+    "description": "Crea il tuo nuovo tenant per continuare a esplorare tutto il potenziale delle metriche di osservabilità. Potrai inviare dati, creare dashboard e configurare avvisi adatti alle tue esigenze specifiche.",
+    "orderButtonLabel": "Crea il tuo tenant"
+  },
+  "creation": {
+    "title": "Crea un tenant",
+    "tenantInformation": "Inserisci le informazioni del tenant",
+    "namePlaceholder": "Nome del tenant",
+    "description": "Descrizione (opzionale)",
+    "descriptionPlaceholder": "Aggiungi una descrizione delle metriche che scriverai in questo tenant"
+  },
+  "configuration": {
+    "title": "Configura il tuo tenant",
+    "retention": "Ritenzione",
+    "retentionPlaceholder": "Seleziona la ritenzione dei dati",
+    "limit": {
+      "title": "Limite di assunzione (metriche attive)",
+      "description": "Imposta il limite massimo del numero di metriche attive per questo tenant."
+    }
+  }
+}
